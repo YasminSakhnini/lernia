@@ -1,0 +1,284 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #f9f2f3;
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        font-size: 16px;
+    }
+    
+    nav {
+        position: relative;
+        background-image: url("/img/tt.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 60vh;
+        background-position: center;
+    }
+    
+    .textCover {
+        position: absolute;
+        left: 10%;
+        bottom: 57%;
+        font-size: 2.5em;
+        color: #cccc00;
+        text-shadow: 2px 2px 10px black;
+        letter-spacing: 5px;
+        font-family: 'Inconsolata', monospace;
+    }
+    
+    nav ul {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(40, 40, 40, 0.5);
+        width: 100%;
+        float: left;
+    }
+    
+    header ul a.active {
+        color: #ffffff;
+        font-weight: bold;
+    }
+    
+    header li {
+        display: inline-block;
+        padding: 8px;
+        list-style-type: none;
+    }
+    
+    header li a {
+        display: inline-block;
+        color: rgb(245, 255, 112);
+        font-size: 1.2em;
+        font-family: 'Inconsolata', monospace;
+        text-align: center;
+        padding: 10px 50PX;
+    }
+    
+    header nav>ul>li:hover {
+        color: aliceblue;
+        background-color: rgba(234, 229, 229, 0.5);
+    }
+    
+    header>h1 {
+        display: inherit;
+        font-weight: bold;
+        font-size: 2em;
+    }
+    
+    main {
+        max-width: 900px;
+        margin: auto;
+    }
+    
+    .greeting {
+        font-size: 1.5em;
+        padding: 30px;
+        font-family: 'Inconsolata', monospace;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .wrap {
+        position: relative;
+        display: inline-block;
+        padding: 30px 30px 5px 30px;
+    }
+    
+    .wrap-content {
+        display: none;
+        position: absolute;
+        background-color: rgb(255, 246, 246);
+        min-width: 160px;
+        box-shadow: 0 8px 16px 0;
+        z-index: 1;
+    }
+    
+    .wrap:hover .wrap-content {
+        display: block;
+        padding: 10px 30px;
+    }
+    
+    .desc {
+        margin-bottom: 10px;
+        text-align: center;
+        color: #ffffff;
+    }
+    
+    .wrap>h3 {
+        font-family: 'Inconsolata', monospace;
+        font-size: 1.5em;
+        color: rgb(0, 0, 0);
+        text-align: left;
+        max-width: 80%;
+        margin-bottom: 10px;
+    }
+    
+    .wrap>p {
+        font-family: 'Hind', sans-serif;
+        color: #4c4848;
+        display: inline-block;
+        max-width: 80%;
+        margin-bottom: 10px;
+        line-height: 1.6;
+    }
+    /*styling my gallery*/
+    
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .clearfix>h3 {
+        margin-bottom: 10px;
+        margin-top: 20px;
+        font-family: 'Inconsolata', monospace;
+        font-size: 1.5em;
+    }
+    
+    .clearfix>p {
+        margin-bottom: 10px;
+        font-family: 'Hind', sans-serif;
+        font-size: 1em;
+        line-height: 1.6;
+    }
+    
+    .gallery {
+        font-size: 0;
+    }
+    
+    figure {
+        position: relative;
+        display: block;
+        padding: 4px;
+        float: left;
+        width: 25%;
+        line-height: 0;
+    }
+    
+    figure img {
+        width: 100%;
+    }
+    
+    figcaption {
+        display: none;
+        position: absolute;
+        bottom: 5px;
+        color: aliceblue;
+        font-size: 18px;
+        font-family: 'Hind', sans-serif;
+        background-color: rgba(0, 0, 0, 0.5);
+        left: 5px;
+        right: 5px;
+        text-shadow: 10px 10px 10px black;
+        padding: 5px;
+        text-align: center;
+        line-height: 2;
+    }
+    
+    figure:hover figcaption {
+        display: block;
+    }
+    
+    .sixty {
+        width: 60%;
+    }
+    
+    .twenty {
+        width: 20%;
+    }
+    
+    .half {
+        width: 50%;
+    }
+    
+    .twentyfive {
+        width: 25%;
+    }
+    
+    footer {
+        background-color: rgba(40, 40, 40, 0.5);
+        color: rgb(245, 255, 112);
+        font-size: 1.2em;
+        flex: 1;
+    }
+    
+    footer>p {
+        float: left;
+        padding: 20px;
+    }
+    
+    .info {
+        color: rgb(255, 255, 255);
+    }
+    /*styling my lunch page*/
+    
+    .container {
+        padding: 20px;
+        background-color: rgba(40, 40, 40, 0.5);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .btn {
+        margin-bottom: 10px;
+        text-align: right;
+    }
+    
+    .weekDays {
+        color: #cccc00;
+        font-size: 1.3em;
+        text-align: left;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        font-family: 'Inconsolata', monospace;
+    }
+    
+    .dishName {
+        color: #eee5e5;
+        font-size: 1em;
+        text-align: left;
+        margin-bottom: 10px;
+        font-family: 'Inconsolata', monospace;
+    }
+    
+    .dishDesc {
+        color: #000000;
+        font-size: 1em;
+        text-align: left;
+        margin-bottom: 10px;
+        font-family: 'Hind', sans-serif;
+    }
+    
+    #sv,
+    #en {
+        background-color: rgb(248, 248, 248);
+        border: none;
+        color: #232121;
+        padding: 15px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 1em;
+        margin: 4px 4px;
+        cursor: pointer;
+    }
+    
+    #sv:hover,
+    #en:hover {
+        background-color: rgba(103, 104, 91, 0.5);
+        color: white;
+    }
+    
+    .dayMenu {
+        color: rgb(0, 0, 0);
+        list-style-type: none;
+        margin-bottom: 40px;
+    }
